@@ -1,0 +1,129 @@
+.carrosel__titulo {
+    color: var(--laranja);
+    background-color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1rem 0 0.5rem 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: .5rem 0;
+}
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+}
+
+.card {
+    border-radius: 10px;
+    background: var(--branco);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.descricao__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.descricao__titulo-livro {
+    color: var(--azul);
+    font-size: 18px;
+    font-weight: 700;
+    margin: .5rem 0;
+}
+
+.descricao__texto {
+    font-size: 14px;
+}
+
+.botoes__item {
+    margin: 0 0.5rem;
+}
+
+.botoes__ancora {
+    background-color: var(--laranja);
+    padding: 1rem 2.2rem;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.descricao-escritora {
+    margin-right: 1rem;
+}
+
+.descricao-escritora-espacamento {
+    margin-bottom: .5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .carrosel__titulo {
+        font-size: 26px;
+    }
+
+    .swiper-pagination {
+        margin: 2rem 0 3rem 0;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+
+    .card {
+        width: 40%;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .carrosel__container {
+        display: flex;
+        margin: 0 20vw 3rem 20vw;
+        align-items: center;
+    }
+
+    .swiper-pagination {
+        margin: 1rem 0;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .card {
+        width: 60%;
+        margin-left: 4rem;
+    }
+}
+
